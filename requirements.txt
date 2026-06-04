@@ -1,0 +1,5 @@
+streamlit
+anthropic
+simple_salesforce
+requests
+cryptography
