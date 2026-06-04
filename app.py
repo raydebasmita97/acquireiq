@@ -21,9 +21,7 @@ if "result" not in st.session_state:
     st.session_state.result = None
 
 def get_sf_connection():
-    private_key_path = st.secrets["SF_PRIVATE_KEY_PATH"]
-    with open(private_key_path, "r") as f:
-        private_key = f.read()
+    private_key = st.secrets["SF_PRIVATE_KEY"]
 
     payload = {
         "iss": st.secrets["SF_CONSUMER_KEY"],
