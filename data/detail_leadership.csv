@@ -1,0 +1,85 @@
+leader_id,company_id,name,title,tenure_since,years_at_company,advanced_degree,degree_institution,functional_expertise,internal_promotion
+1,1,Sandra Kim,CEO,2019,5,YES,University of Texas,Healthcare Operations,NO
+2,1,Mark Torres,CFO,2021,3,YES,Vanderbilt,Healthcare Finance,YES
+3,1,Angela Davis,COO,2020,4,YES,Duke,Clinical Operations,NO
+4,1,Raj Patel,VP Sales,2022,2,NO,,Sales,YES
+5,1,Linda Wu,VP Clinical,2019,5,YES,UT Southwestern,Clinical Management,NO
+6,2,Marcus Webb,CEO,2016,8,YES,Texas A&M,Supply Chain,NO
+7,2,Carl Owens,CFO,2018,6,YES,Rice University,Logistics Finance,NO
+8,2,Dianne Marsh,COO,2020,4,NO,,Operations,NO
+9,2,Kevin Lin,VP Technology,2021,3,NO,,IT & Systems,NO
+10,2,Sandra Pierce,VP Client Relations,2019,5,YES,Houston Baptist,Account Management,NO
+11,3,Priya Nair,CEO,2020,4,YES,UT Austin,SaaS Product,YES
+12,3,Ben Kohler,CTO,2020,4,YES,Carnegie Mellon,Engineering,YES
+13,3,Sarah Chen,CFO,2023,1,NO,,Finance,NO
+14,3,Victor Stone,VP Sales,2022,2,NO,,Enterprise Sales,NO
+15,4,James Okafor,CEO,2018,6,YES,Georgia Tech,Workforce Solutions,NO
+16,4,Tracy Mills,CFO,2020,4,YES,Emory,Finance,NO
+17,4,Roberto Vega,COO,2021,3,NO,,Operations,NO
+18,4,Alicia Hunt,VP Recruiting,2019,5,YES,UGA,Talent Acquisition,YES
+19,4,Derek Shaw,VP Client Services,2022,2,NO,,Client Management,YES
+20,5,Tom Rivera,CEO,2014,10,YES,Arizona State,Field Services,NO
+21,5,Barbara Kline,CFO,2019,5,YES,U of Arizona,Finance,YES
+22,5,Chris Mann,COO,2018,6,NO,,HVAC Operations,YES
+23,5,Dave Simmons,VP Service,2020,4,NO,,Service Operations,NO
+24,5,Janet Cole,VP Sales,2022,2,NO,,Sales,YES
+25,6,Dr. Ana Costa,CEO,2019,5,YES,Vanderbilt Medical,Diagnostics,NO
+26,6,Phil Grant,CFO,2021,3,YES,Belmont,Lab Finance,YES
+27,6,Dr. Susan Park,Chief Medical Officer,2019,5,YES,Johns Hopkins,Clinical Lab,YES
+28,6,Aaron White,VP Operations,2022,2,NO,,Lab Operations,YES
+29,7,Lisa Park,CEO,2021,3,YES,CU Boulder,Retail & CPG,YES
+30,7,Chris Walsh,CFO,2022,2,NO,,Retail Finance,NO
+31,7,Maya Johnson,VP Merchandising,2021,3,YES,Colorado State,Category Management,NO
+32,7,Ethan Brooks,VP Operations,2022,2,NO,,Retail Ops,NO
+33,8,Dr. Brian Mills,CEO,2014,10,YES,Duke Dental,Dental Practice,NO
+34,8,Jennifer Lake,CFO,2018,6,YES,UNC Chapel Hill,Healthcare Finance,NO
+35,8,Dr. Karen Ross,Chief Dental Officer,2016,8,YES,UNC Dental,Clinical Dentistry,YES
+36,8,Paul Lee,VP Operations,2020,4,NO,,Multi-Site Ops,NO
+37,8,Allison Ford,VP Marketing,2021,3,NO,,Healthcare Marketing,YES
+38,9,Derek Holt,CEO,2016,8,YES,Ohio State,Manufacturing,NO
+39,9,Helen Price,CFO,2019,5,YES,Case Western,Industrial Finance,YES
+40,9,Gary Young,COO,2017,7,YES,Ohio State,Plant Operations,NO
+41,9,Mike Burns,VP Engineering,2020,4,YES,University of Dayton,Manufacturing Engineering,YES
+42,9,Tina Shaw,VP Sales,2021,3,NO,,OEM Sales,YES
+43,10,Mei-Ling Torres,CEO,2021,3,YES,Northwestern,EdTech,YES
+44,10,Alex Freeman,CTO,2021,3,YES,MIT,Engineering,NO
+45,10,Ryan Park,CFO,2023,1,NO,,Finance,YES
+46,10,Kira Patel,VP Growth,2022,2,NO,,Sales & Marketing,NO
+47,11,Patrick O'Brien,CEO,2018,6,YES,University of Missouri,Insurance,YES
+48,11,Donna Chase,CFO,2020,4,YES,Wash U St Louis,Insurance Finance,NO
+49,11,Leon Harris,COO,2019,5,YES,U of Kansas,Insurance Ops,NO
+50,11,Rachel Moore,VP Product,2021,3,NO,,Product,YES
+51,11,Frank Diaz,VP Claims,2020,4,YES,Missouri State,Claims Management,YES
+52,12,Carla Mendez,CEO,2019,5,YES,University of Florida,Real Estate,NO
+53,12,Noah Clarke,CFO,2021,3,NO,,Finance,YES
+54,12,Yvonne Fox,COO,2020,4,YES,FSU,Property Management,YES
+55,12,Sean Walsh,VP Growth,2022,2,NO,,Business Development,NO
+56,12,Laura Chen,VP Technology,2023,1,NO,,PropTech,NO
+57,13,Yusuf Adeyemi,CEO,2022,2,YES,University of Washington,Cybersecurity,YES
+58,13,Aisha Patel,CTO,2022,2,YES,Stanford,Security Engineering,YES
+59,13,Morgan Lee,CFO,2023,1,NO,,Finance,YES
+60,13,Chris Jordan,VP Sales,2023,1,NO,,Enterprise Sales,YES
+61,14,Rachel Nguyen,CEO,2018,6,YES,University of Minnesota,Environmental Science,NO
+62,14,Todd Warren,CFO,2020,4,YES,U of St Thomas,Environmental Finance,YES
+63,14,Scott Hill,COO,2019,5,YES,Purdue,Environmental Ops,NO
+64,14,Diane Fox,Chief Science Officer,2018,6,YES,Michigan,Environmental Engineering,NO
+65,14,Kevin Nash,VP Business Dev,2022,2,NO,,BD,NO
+66,15,Dr. Samuel Addo,CEO,2016,8,YES,Harvard Medical,Pediatrics,YES
+67,15,Claire Newton,CFO,2019,5,YES,Boston College,Healthcare Finance,NO
+68,15,Dr. Rita Pham,Chief Medical Officer,2016,8,YES,Children's Hospital Boston,Pediatric Medicine,NO
+69,15,Mike Stern,COO,2020,4,NO,,Clinical Ops,NO
+70,15,Emily Walsh,VP Growth,2022,2,NO,,Strategy,NO
+71,16,Nina Kowalski,CEO,2022,2,YES,University of Florida,Logistics,YES
+72,16,Brent Hall,CFO,2023,1,NO,,Finance,NO
+73,16,Tom Greene,COO,2022,2,YES,Georgia Tech,Cold Chain Ops,NO
+74,16,Paula Ramos,VP Sales,2023,1,NO,,Sales,NO
+75,17,Aaron Whitfield,CEO,2018,6,YES,Oregon State,Food Science,YES
+76,17,Karen Ellis,CFO,2020,4,YES,U of Oregon,Food & Bev Finance,YES
+77,17,Jose Herrera,COO,2019,5,YES,Cal Poly SLO,Food Manufacturing,YES
+78,17,Brenda Kim,VP Sales,2021,3,NO,,CPG Sales,YES
+79,17,Ian Scott,VP Innovation,2022,2,YES,Cornell,Product Development,NO
+80,18,Dr. Fatima Hassan,CEO,2020,4,YES,Duke,Physical Therapy,YES
+81,18,Dan Powell,CFO,2022,2,NO,,Finance,NO
+82,18,Dr. Marie Stone,Chief Clinical Officer,2020,4,YES,UNC,Clinical PT,NO
+83,18,Alex Nguyen,VP Operations,2021,3,NO,,Multi-Site Ops,NO
+84,18,Tamara Hill,VP Marketing,2023,1,NO,,Healthcare Marketing,NO

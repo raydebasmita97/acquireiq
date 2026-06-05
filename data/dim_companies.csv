@@ -1,0 +1,19 @@
+company_id,name,industry,stage,city,ceo,acq_year,employees_at_acq
+1,Apex Home Health,Healthcare Services,Growth,"Dallas, TX",Sandra Kim,2021,120
+2,Bridgepoint Logistics,3PL / Supply Chain,Mature,"Houston, TX",Marcus Webb,2019,195
+3,ClearPath Software,SaaS / Tech,Early Growth,"Austin, TX",Priya Nair,2023,38
+4,Denova Staffing,Workforce Solutions,Growth,"Atlanta, GA",James Okafor,2022,105
+5,EverGreen HVAC,Field Services,Mature,"Phoenix, AZ",Tom Rivera,2018,180
+6,Fusion Medical Labs,Diagnostics,Growth,"Nashville, TN",Dr. Ana Costa,2022,88
+7,GreenWave Retail,Specialty Retail,Early Growth,"Denver, CO",Lisa Park,2023,58
+8,Highpoint Dental,Dental / Healthcare,Mature,"Charlotte, NC",Dr. Brian Mills,2020,142
+9,Ironclad Fabrication,Manufacturing,Mature,"Columbus, OH",Derek Holt,2020,230
+10,Luminary EdTech,Education Technology,Early Growth,"Chicago, IL",Mei-Ling Torres,2023,52
+11,ShieldBridge Insurance,Insurance Services,Growth,"Kansas City, MO",Patrick O'Brien,2021,98
+12,Nexus Property Mgmt,Real Estate Services,Growth,"Tampa, FL",Carla Mendez,2022,76
+13,VaultGuard Cyber,Cybersecurity SaaS,Early Growth,"Seattle, WA",Yusuf Adeyemi,2023,44
+14,TerraClean Environmental,Environmental Services,Growth,"Minneapolis, MN",Rachel Nguyen,2022,112
+15,PrimeCare Pediatrics,Healthcare Services,Mature,"Boston, MA",Dr. Samuel Addo,2019,165
+16,Coastal Cold Chain,3PL / Supply Chain,Early Growth,"Jacksonville, FL",Nina Kowalski,2023,88
+17,Harvest Food Group,Food & Beverage,Growth,"Portland, OR",Aaron Whitfield,2021,148
+18,Brightline Physical Therapy,Healthcare Services,Growth,"Raleigh, NC",Dr. Fatima Hassan,2022,93

@@ -1,0 +1,4 @@
+status,color_hex,score_min,score_max,label
+On Track,1E7E34,72,100,Performing at or above expectations
+Watch,D35400,55,71,Requires monitoring; 1-2 KPIs below target
+Critical,C0392B,0,54,Immediate operational review required

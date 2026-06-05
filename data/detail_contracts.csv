@@ -1,0 +1,72 @@
+contract_id,company_id,client_name,contract_type,start_date,end_date,annual_value,contract_status,risk_status,auto_renew,pct_of_revenue
+1,1,Aetna Health Networks,Payor Agreement,1/1/2022,12/31/2024,3200000,Active,,No,16.8
+2,1,Humana Home Health,Service Agreement,6/1/2021,5/31/2024,2800000,Active,,Yes,14.7
+3,1,United Healthcare,Payor Agreement,3/1/2023,2/28/2025,1900000,Active,,Yes,10
+4,1,Dallas County Health,Government Contract,9/1/2021,8/31/2024,950000,Active,,No,5
+5,2,Sysco Corporation,3PL Services,1/1/2020,12/31/2024,8500000,Active,,No,24.3
+6,2,Amazon Logistics,Cross-Dock Agreement,7/1/2021,6/30/2024,6200000,Active,,No,17.7
+7,2,Walmart Supply Chain,Distribution,3/1/2019,2/28/2024,5100000,Active,,No,14.6
+8,2,H-E-B Grocery,Regional Distribution,1/1/2022,12/31/2024,3800000,Active,,No,10.9
+9,2,FedEx Freight,Subcontract,1/1/2023,12/31/2024,1200000,At Risk,Volume Down,Yes,3.4
+10,3,Apex Home Health,Platform License,4/1/2023,3/31/2025,480000,Active,,Yes,6.9
+11,3,Highpoint Dental,Platform License,6/1/2023,5/31/2025,320000,Active,,Yes,4.6
+12,3,MedGroup Holdings,Enterprise SaaS,1/1/2024,12/31/2025,840000,Active,,No,12
+13,3,CarePlex Network,Starter License,3/1/2024,2/28/2025,180000,Active,,No,2.6
+14,4,Delta Air Lines,RPO Contract,1/1/2022,12/31/2024,4200000,Active,,Yes,24.7
+15,4,Coca-Cola Company,Temp Staffing MSA,5/1/2021,4/30/2024,3600000,Active,,Yes,21.2
+16,4,UPS Ground,Light Industrial,9/1/2022,8/31/2024,2900000,Active,,Yes,17.1
+17,4,NCR Corporation,IT Staffing,1/1/2023,12/31/2024,1800000,Active,,Yes,10.6
+18,5,Sun Health Properties,HVAC Maintenance,1/1/2019,12/31/2024,2100000,At Risk,Renewal Uncertain,Yes,8.4
+19,5,Banner Health Systems,Service Contract,6/1/2020,5/31/2024,1800000,Active,,Yes,7.2
+20,5,Phoenix Unified Schools,Maintenance Agreement,9/1/2021,8/31/2024,1400000,Active,,Yes,5.6
+21,5,Maricopa County,Government HVAC,1/1/2022,12/31/2024,980000,Active,,No,3.9
+22,6,Vanderbilt Medical Center,Reference Lab Agreement,1/1/2022,12/31/2024,3800000,Active,,Yes,29.2
+23,6,HCA Healthcare TN,Lab Services,7/1/2021,6/30/2024,2900000,Active,,Yes,22.3
+24,6,BlueCross BlueShield TN,Payor Agreement,1/1/2023,12/31/2025,1600000,Active,,No,12.3
+25,7,Whole Foods Market,Wholesale Supply,6/1/2022,5/31/2024,1200000,Active,,Yes,13.3
+26,7,Natural Grocers,Distribution,1/1/2023,12/31/2024,850000,Active,,Yes,9.4
+27,7,Sprouts Farmers Market,Vendor Agreement,7/1/2023,6/30/2025,700000,Active,,No,7.8
+28,8,Cigna Dental,PPO Network Agreement,1/1/2020,12/31/2024,5200000,Active,,No,23.6
+29,8,Delta Dental NC,Provider Agreement,6/1/2019,5/31/2024,4100000,Active,,Yes,18.6
+30,8,Aetna Dental,PPO Contract,1/1/2021,12/31/2024,3300000,Active,,No,15
+31,8,MetLife Dental,Provider Network,3/1/2022,2/28/2025,2800000,Active,,Yes,12.7
+32,9,Ford Motor Company,Precision Parts Supply,1/1/2018,12/31/2025,12000000,Active,,No,30.8
+33,9,Honda of America,Component Supply,6/1/2019,5/31/2024,9500000,Active,,Yes,24.4
+34,9,Whirlpool Corporation,OEM Manufacturing,1/1/2020,12/31/2024,7200000,Active,,No,18.5
+35,9,Stanley Black & Decker,Contract Manufacturing,1/1/2022,12/31/2024,4800000,Active,,No,12.3
+36,10,Chicago Public Schools,District License,9/1/2023,8/31/2025,1800000,Active,,No,22.5
+37,10,Houston ISD,Platform Agreement,1/1/2024,12/31/2025,1200000,Active,,Yes,15
+38,10,Pearson Education,Content Partnership,6/1/2023,5/31/2025,950000,Active,,Yes,11.9
+39,10,Arizona State University,Enterprise License,3/1/2024,2/28/2026,720000,Active,,Yes,9
+40,11,Cerner Health,Benefits Administration,1/1/2021,12/31/2024,4800000,Active,,Yes,22.9
+41,11,Sprint Industrial,Group Insurance,6/1/2020,5/31/2024,3600000,Active,,Yes,17.1
+42,11,MidWest Builders Assoc,Association Program,1/1/2022,12/31/2025,2400000,Active,,Yes,11.4
+43,11,Regional Credit Union,Affinity Insurance,3/1/2023,2/28/2025,1900000,Active,,Yes,9
+44,12,Blackstone Real Estate,Property Mgmt MSA,1/1/2022,12/31/2025,5600000,Active,,Yes,40
+45,12,RealPage Inc,Tech Partnership,7/1/2021,6/30/2024,1200000,Active,,Yes,8.6
+46,12,Greystar Properties,Submanagement,9/1/2022,8/31/2024,3800000,Active,,Yes,27.1
+47,12,Tampa Bay Housing Auth,Affordable Housing Mgmt,1/1/2023,12/31/2025,2100000,Active,,No,15
+48,13,Ironclad Fabrication,Cybersecurity Platform,6/1/2023,5/31/2025,480000,Active,,Yes,5.6
+49,13,ShieldBridge Insurance,Enterprise License,1/1/2024,12/31/2025,560000,Active,,No,6.6
+50,13,HealthNet Systems,Healthcare Cyber,3/1/2024,2/28/2026,720000,Active,,Yes,8.5
+51,13,Pacific Financial Group,Financial Security,6/1/2024,5/31/2026,640000,Active,,Yes,7.5
+52,14,3M Corporation,Remediation Contract,1/1/2021,12/31/2024,5200000,Active,,No,32.5
+53,14,MN Department of Transport,Environmental Services,6/1/2020,5/31/2024,3400000,Active,,Yes,21.3
+54,14,US Army Corps of Engineers,Site Remediation,9/1/2022,8/31/2025,4800000,Active,,Yes,30
+55,14,Xcel Energy,Environmental Compliance,1/1/2023,12/31/2025,2600000,Active,,No,16.3
+56,15,Blue Cross MA,Payor Agreement,1/1/2019,12/31/2024,7800000,Active,,No,30
+57,15,Tufts Health Plan,Provider Contract,6/1/2020,5/31/2024,5400000,Active,,Yes,20.8
+58,15,Harvard Pilgrim,PPO Network,1/1/2021,12/31/2024,4200000,Active,,No,16.2
+59,15,Mass General Brigham,Referral Agreement,3/1/2022,2/28/2025,3100000,Active,,Yes,11.9
+60,16,Dole Food Company,Cold Chain Logistics,1/1/2023,12/31/2025,4200000,Active,,Yes,33.6
+61,16,Chiquita Brands,Refrigerated Transport,6/1/2023,5/31/2025,3600000,Active,,No,28.8
+62,16,Publix Super Markets,Distribution Agreement,1/1/2024,12/31/2025,2800000,Active,,Yes,22.4
+63,17,New Seasons Market,Wholesale Supply,1/1/2019,12/31/2024,6800000,Active,,Yes,28.3
+64,17,Kroger West,Vendor Agreement,6/1/2020,5/31/2024,5200000,Active,,No,21.7
+65,17,Costco Wholesale,Bulk Supply,9/1/2021,8/31/2024,4100000,Active,,Yes,17.1
+66,17,Amazon Fresh,Delivery Program,1/1/2022,12/31/2024,3300000,At Risk,Volume Declining,No,13.8
+67,17,Target Stores,Private Label,3/1/2023,2/28/2025,2100000,Active,,No,8.8
+68,18,BCBS NC,Payor Agreement,1/1/2020,12/31/2024,4800000,Active,,Yes,32
+69,18,Aetna Southeast,Provider Contract,6/1/2021,5/31/2025,3200000,Active,,Yes,21.3
+70,18,UNC Health System,Referral Agreement,1/1/2022,12/31/2024,2600000,Active,,Yes,17.3
+71,18,Duke University Health,Referral Network,3/1/2023,2/28/2025,1900000,Active,,Yes,12.7

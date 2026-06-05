@@ -1,0 +1,16 @@
+industry,short_code,sector,ebitda_benchmark_low,ebitda_benchmark_high
+Healthcare Services,HC,Healthcare,10,22
+3PL / Supply Chain,LOG,Industrials,7,14
+SaaS / Tech,TECH,Technology,15,30
+Workforce Solutions,WF,Business Services,10,18
+Field Services,FS,Industrials,10,20
+Diagnostics,DX,Healthcare,12,22
+Specialty Retail,RET,Consumer,10,20
+Dental / Healthcare,DEN,Healthcare,18,28
+Manufacturing,MFG,Industrials,9,18
+Education Technology,EDT,Technology,14,28
+Insurance Services,INS,Financial Services,14,24
+Real Estate Services,RE,Real Estate,16,28
+Cybersecurity SaaS,CYB,Technology,18,34
+Environmental Services,ENV,Industrials,11,21
+Food & Beverage,F&B,Consumer,9,20

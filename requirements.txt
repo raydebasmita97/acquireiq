@@ -3,3 +3,10 @@ anthropic
 simple_salesforce
 requests
 cryptography
+scikit-learn
+numpy
+pdfplumber
+pandas
+openpyxl
+plotly
+statsmodels

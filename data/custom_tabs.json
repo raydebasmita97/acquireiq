@@ -1,0 +1,90 @@
+[
+  {
+    "title": "Employee Overview",
+    "icon": "\ud83d\udc65",
+    "content": "Employees by company",
+    "charts": [
+      {
+        "type": "bar",
+        "title": "Employees by Company",
+        "data": [
+          {
+            "company": "Apex Home Health",
+            "employees": 120
+          },
+          {
+            "company": "Bridgepoint Logistics",
+            "employees": 195
+          },
+          {
+            "company": "ClearPath Software",
+            "employees": 38
+          },
+          {
+            "company": "Denova Staffing",
+            "employees": 105
+          },
+          {
+            "company": "EverGreen HVAC",
+            "employees": 180
+          },
+          {
+            "company": "Fusion Medical Labs",
+            "employees": 88
+          },
+          {
+            "company": "GreenWave Retail",
+            "employees": 58
+          },
+          {
+            "company": "Highpoint Dental",
+            "employees": 142
+          },
+          {
+            "company": "Ironclad Fabrication",
+            "employees": 230
+          },
+          {
+            "company": "Luminary EdTech",
+            "employees": 52
+          },
+          {
+            "company": "ShieldBridge Insurance",
+            "employees": 98
+          },
+          {
+            "company": "Nexus Property Mgmt",
+            "employees": 76
+          },
+          {
+            "company": "VaultGuard Cyber",
+            "employees": 44
+          },
+          {
+            "company": "TerraClean Environmental",
+            "employees": 112
+          },
+          {
+            "company": "PrimeCare Pediatrics",
+            "employees": 165
+          },
+          {
+            "company": "Coastal Cold Chain",
+            "employees": 88
+          },
+          {
+            "company": "Harvest Food Group",
+            "employees": 148
+          },
+          {
+            "company": "Brightline Physical Therapy",
+            "employees": 93
+          }
+        ],
+        "x": "company",
+        "y": "employees"
+      }
+    ],
+    "table": null
+  }
+]

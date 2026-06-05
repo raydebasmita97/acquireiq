@@ -1,0 +1,70 @@
+location_id,company_id,city,location_type,status,opened_year,sq_ft,employees_onsite
+1,1,"Dallas, TX",HQ,Active,2015,17254,59
+2,1,"Fort Worth, TX",Branch,Active,2019,18622,28
+3,1,"Arlington, TX",Branch,Active,2021,10810,9
+4,1,"Plano, TX",Branch,Active,2022,16109,39
+5,2,"Houston, TX",HQ,Active,2012,14573,32
+6,2,"San Antonio, TX",Distribution Center,Active,2017,24221,29
+7,2,"Austin, TX",Branch,Active,2020,22773,18
+8,2,"El Paso, TX",Branch,Active,2021,3656,57
+9,2,"Laredo, TX",Cross-Dock,Active,2022,14115,25
+10,3,"Austin, TX",HQ,Active,2020,20805,30
+11,3,Remote — US,Engineering Hub,Active,2023,0,0
+12,4,"Atlanta, GA",HQ,Active,2016,2881,55
+13,4,"Charlotte, NC",Regional Office,Active,2020,14233,46
+14,4,"Nashville, TN",Branch,Active,2021,15032,28
+15,4,"Birmingham, AL",Branch,Active,2022,11949,35
+16,5,"Phoenix, AZ",HQ,Active,2010,11067,55
+17,5,"Scottsdale, AZ",Branch,Active,2015,11433,45
+18,5,"Tempe, AZ",Branch,Active,2018,16340,25
+19,5,"Mesa, AZ",Branch,Active,2020,9031,50
+20,5,"Tucson, AZ",Branch,Watch — Low Volume,2021,13587,15
+21,6,"Nashville, TN",HQ / Main Lab,Active,2018,2119,15
+22,6,"Memphis, TN",Satellite Lab,Active,2021,9646,22
+23,6,"Knoxville, TN",Collection Center,Active,2023,3393,45
+24,7,"Denver, CO",HQ / Flagship,Active,2021,14525,34
+25,7,"Boulder, CO",Store,Active,2022,17486,35
+26,7,"Fort Collins, CO",Store,Active,2023,13847,37
+27,7,"Colorado Springs, CO",Store,Active,2023,10621,31
+28,8,"Charlotte, NC",HQ / Flagship Clinic,Active,2014,5651,40
+29,8,"Raleigh, NC",Clinic,Active,2017,17536,38
+30,8,"Durham, NC",Clinic,Active,2019,9241,17
+31,8,"Greensboro, NC",Clinic,Active,2021,24541,8
+32,8,"Wilmington, NC",Clinic,Active,2022,21596,57
+33,9,"Columbus, OH",HQ / Plant 1,Active,2008,14848,16
+34,9,"Dayton, OH",Plant 2,Active,2014,7351,46
+35,9,"Cincinnati, OH",Distribution,Active,2019,18140,15
+36,9,"Cleveland, OH",Plant 3,Active,2022,21414,20
+37,10,"Chicago, IL",HQ,Active,2021,22599,42
+38,10,"New York, NY",Sales Office,Active,2023,18957,44
+39,10,Remote — US,Engineering,Active,2023,0,0
+40,11,"Kansas City, MO",HQ,Active,2017,11353,50
+41,11,"St. Louis, MO",Regional Office,Active,2020,11601,35
+42,11,"Springfield, MO",Branch,Active,2022,20360,11
+43,12,"Tampa, FL",HQ,Active,2019,1903,8
+44,12,"Orlando, FL",Regional Office,Active,2021,23449,28
+45,12,"Miami, FL",Branch,Active,2022,20104,54
+46,12,"Jacksonville, FL",Branch,Active,2023,21132,20
+47,13,"Seattle, WA",HQ,Active,2022,24207,52
+48,13,"San Francisco, CA",Sales Office,Active,2023,15848,57
+49,13,Remote — US,R&D,Active,2023,0,0
+50,14,"Minneapolis, MN",HQ,Active,2016,15332,21
+51,14,"St. Paul, MN",Operations Center,Active,2019,21160,23
+52,14,"Duluth, MN",Field Office,Active,2022,12370,35
+53,14,"Madison, WI",Branch,Active,2023,12744,13
+54,15,"Boston, MA",HQ / Main Clinic,Active,2012,18866,12
+55,15,"Cambridge, MA",Clinic,Active,2016,23868,15
+56,15,"Worcester, MA",Clinic,Active,2019,22114,35
+57,15,"Providence, RI",Clinic,Active,2021,6610,46
+58,15,"Hartford, CT",Clinic,Active,2022,13879,54
+59,16,"Jacksonville, FL",HQ / Cold Storage Hub,Active,2021,10368,25
+60,16,"Savannah, GA",Distribution,Active,2022,5039,53
+61,16,"Charleston, SC",Cold Storage,Active,2023,4853,29
+62,17,"Portland, OR",HQ / Production,Active,2016,19409,13
+63,17,"Seattle, WA",Distribution,Active,2019,7627,52
+64,17,"Eugene, OR",Production,Active,2021,10706,18
+65,17,"Boise, ID",Distribution,Active,2023,14886,52
+66,18,"Raleigh, NC",HQ / Clinic,Active,2020,14623,47
+67,18,"Durham, NC",Clinic,Active,2021,17767,44
+68,18,"Chapel Hill, NC",Clinic,Active,2022,6540,43
+69,18,"Cary, NC",Clinic,Active,2023,14895,47

@@ -1,0 +1,72 @@
+product_id,company_id,product_service_name,type,revenue_pct,est_annual_revenue,gross_margin_pct,yoy_growth_pct,active_customers
+1,1,Skilled Nursing Care,Core Service,65,12349997,49.9,4.4,268
+2,1,Physical Therapy,Core Service,18,3419999,50.8,29.9,237
+3,1,Occupational Therapy,Core Service,10,1900000,51.8,25.3,17
+4,1,Care Coordination,Value-Add,7,1330000,37.6,13.9,62
+5,2,Freight Brokerage,Core Service,42,14700002,37.5,28.7,82
+6,2,Warehousing & Distribution,Core Service,35,12250001,43.1,-4.2,16
+7,2,Cross-Docking,Core Service,15,5250001,41.1,1.3,27
+8,2,Last-Mile Delivery,Growth Service,8,2800000,54.3,24.1,412
+9,3,Workflow Automation Platform,Core Product,70,4899997,58.0,-3.7,109
+10,3,Analytics Dashboard Module,Add-On,18,1259999,56.2,5.8,177
+11,3,API Integrations,Add-On,7,490000,34.4,6.3,171
+12,3,Implementation Services,Services,5,350000,32.2,-0.1,326
+13,4,Permanent Placement,Core Service,38,6460002,52.3,30.0,265
+14,4,Contract Staffing,Core Service,45,7650002,39.6,1.4,94
+15,4,RPO Solutions,Growth Service,12,2040000,51.4,28.8,255
+16,4,HR Consulting,Value-Add,5,850000,42.5,-1.1,276
+17,5,Residential HVAC Repair,Core Service,44,10999998,35.1,8.1,95
+18,5,Commercial HVAC Maintenance,Core Service,35,8749999,47.7,8.9,299
+19,5,HVAC Installation,Core Service,16,3999999,37.9,7.3,287
+20,5,Smart Thermostat Services,Growth Service,5,1250000,56.1,21.7,406
+21,6,Clinical Lab Testing,Core Service,58,7539998,51.0,24.3,303
+22,6,Pathology Services,Core Service,24,3119999,40.5,16.8,31
+23,6,Genetic Testing,Growth Service,12,1560000,30.0,21.7,88
+24,6,Point-of-Care Testing,Growth Service,6,780000,48.0,6.6,23
+25,7,Organic Supplements,Core Product,45,4050000,37.3,20.8,218
+26,7,Natural Foods,Core Product,30,2700000,56.1,25.1,232
+27,7,Wellness Beverages,Growth Product,15,1350000,28.4,13.9,178
+28,7,Private Label,Growth Product,10,900000,42.0,19.7,333
+29,8,General Dentistry,Core Service,50,10999998,53.0,21.9,232
+30,8,Orthodontics,Core Service,25,5499999,45.9,8.6,221
+31,8,Cosmetic Dentistry,Premium Service,18,3959999,58.1,18.9,235
+32,8,Oral Surgery,Core Service,7,1540000,31.8,17.4,25
+33,9,Precision Metal Parts,Core Product,52,20280000,55.2,11.2,80
+34,9,Custom Fabrication,Core Product,28,10920000,38.4,21.2,198
+35,9,Assembly Services,Core Service,14,5460000,51.4,-2.4,368
+36,9,Tooling & Dies,Specialty,6,2340000,36.3,-3.8,264
+37,10,K-12 Learning Platform,Core Product,60,4800002,55.2,28.1,194
+38,10,Teacher Training Module,Add-On,20,1600001,43.0,11.4,117
+39,10,Student Analytics,Add-On,12,960000,38.6,16.3,391
+40,10,Parent Engagement App,Add-On,8,640000,36.9,12.4,418
+41,11,Group Health Insurance,Core Product,48,10080000,60.5,14.7,329
+42,11,Workers Comp,Core Product,28,5880000,41.7,14.3,415
+43,11,Benefits Administration,Services,15,3150000,56.8,0.9,247
+44,11,Life & Disability,Core Product,9,1890000,42.7,7.9,141
+45,12,Residential Management,Core Service,55,7700002,57.7,24.1,160
+46,12,Commercial Management,Core Service,30,4200001,52.7,3.5,368
+47,12,HOA Management,Growth Service,10,1400000,46.2,21.6,119
+48,12,Leasing Services,Value-Add,5,700000,41.9,-3.6,110
+49,13,Endpoint Protection,Core Product,45,3824998,49.6,11.0,273
+50,13,Identity Management,Core Product,30,2549999,53.6,10.9,180
+51,13,Threat Detection & Response,Growth Product,18,1529999,58.6,27.4,139
+52,13,Compliance Automation,Growth Product,7,595000,44.6,9.7,415
+53,14,Site Remediation,Core Service,40,6399998,56.8,11.5,256
+54,14,Environmental Consulting,Core Service,28,4479999,29.0,-0.0,177
+55,14,Waste Management,Core Service,22,3519999,47.4,24.0,175
+56,14,Air Quality Monitoring,Growth Service,10,1600000,47.3,4.1,118
+57,15,Primary Pediatric Care,Core Service,55,14300002,41.2,2.9,299
+58,15,Developmental Pediatrics,Core Service,20,5200001,36.8,0.5,160
+59,15,Telehealth Visits,Growth Service,15,3900001,53.2,31.9,67
+60,15,School Health Programs,Value-Add,10,2600000,32.6,8.6,138
+61,16,Temperature-Controlled Transport,Core Service,58,7250002,48.2,-0.5,341
+62,16,Cold Storage,Core Service,30,3750001,30.9,19.8,269
+63,16,Last-Mile Cold Chain,Growth Service,12,1500000,49.3,-0.6,40
+64,17,Packaged Foods,Core Product,48,11520000,53.5,-4.3,364
+65,17,Fresh Meal Kits,Core Product,28,6720000,38.6,13.8,130
+66,17,Catering Supply,Core Service,15,3600000,32.2,-2.2,274
+67,17,Private Label Manufacturing,Growth Service,9,2160000,43.5,22.2,63
+68,18,Orthopedic PT,Core Service,42,6300000,47.4,5.2,117
+69,18,Sports Rehabilitation,Core Service,32,4800000,36.9,16.7,278
+70,18,Post-Surgical Rehab,Core Service,18,2700000,49.9,30.5,314
+71,18,Telehealth PT,Growth Service,8,1200000,56.1,-4.7,173
