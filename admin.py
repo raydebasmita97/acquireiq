@@ -66,7 +66,7 @@ with st.sidebar:
         st.session_state.admin_authenticated = False
         st.rerun()
     st.markdown(
-        "<a href='https://acquireiq-ceo-deploy.streamlit.app/' target='_blank' style='color:#1F4E79; font-size:0.85rem;'>← CEO Onboarding</a>",
+        "<a href='https://acquireiq-ceo.streamlit.app/' target='_blank' style='color:#1F4E79; font-size:0.85rem;'>← CEO Onboarding</a>",
         unsafe_allow_html=True
     )
 
