@@ -106,7 +106,7 @@ with col_title:
 with col_admin:
     st.markdown("<div style='text-align:right; padding-top:1.2rem;'>", unsafe_allow_html=True)
     st.markdown(
-        "<a href='http://localhost:8503' target='_blank' style='background:#1F4E79; color:white; padding:0.4rem 0.9rem; border-radius:6px; text-decoration:none; font-size:0.85rem;'>⚙️ Admin</a>",
+        "<a href='https://acquireiq-ceo-deploy.streamlit.app/' target='_blank' style='background:#1F4E79; color:white; padding:0.4rem 0.9rem; border-radius:6px; text-decoration:none; font-size:0.85rem;'>⚙️ Admin</a>",
         unsafe_allow_html=True
     )
     st.markdown("</div>", unsafe_allow_html=True)
