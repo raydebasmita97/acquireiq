@@ -400,12 +400,15 @@ elif nav == "➕ Custom Tabs":
 
     def extract_file_text(f):
         name = f.name.lower()
-        if name.endswith(".csv"):
-            df = pd.read_csv(f)
-            return f"CSV Data ({f.name}):\n{df.to_string(index=False)}"
-        elif name.endswith((".xlsx", ".xls")):
-            df = pd.read_excel(f)
-            return f"Excel Data ({f.name}):\n{df.to_string(index=False)}"
+        if name.endswith(".csv") or name.endswith((".xlsx", ".xls")):
+            f.seek(0)
+            df = pd.read_csv(f) if name.endswith(".csv") else pd.read_excel(f)
+            # For large files, send schema + sample + stats instead of full dump
+            summary = f"File: {f.name}\nRows: {len(df)} | Columns: {len(df.columns)}\n"
+            summary += f"Columns: {', '.join(df.columns.tolist())}\n\n"
+            summary += f"First 30 rows:\n{df.head(30).to_string(index=False)}\n\n"
+            summary += f"Summary statistics:\n{df.describe(include='all').to_string()}"
+            return summary
         elif name.endswith(".txt"):
             return f.read().decode("utf-8", errors="ignore")
         elif name.endswith(".pdf"):
@@ -424,22 +427,42 @@ elif nav == "➕ Custom Tabs":
 
     def render_chart(c):
         import plotly.express as px
+        if not c or not c.get("data"):
+            st.warning("Chart has no data — try regenerating.")
+            return
         try:
-            chart_df   = pd.DataFrame(c["data"])
+            chart_df = pd.DataFrame(c["data"])
+            if chart_df.empty:
+                st.warning("Chart data is empty — try regenerating.")
+                return
+
+            # Fuzzy column match
+            def match_col(name, cols):
+                if name in cols: return name
+                norm = name.lower().replace(" ", "_")
+                for col in cols:
+                    if col.lower().replace(" ", "_") == norm:
+                        return col
+                return cols[0] if cols else name
+
+            cols       = list(chart_df.columns)
+            x_col      = match_col(c.get("x", ""), cols)
+            y_col      = match_col(c.get("y", ""), cols)
             chart_type = c.get("type", "bar")
             title      = c.get("title", "")
+
             if chart_type == "bar":
-                fig = px.bar(chart_df, x=c["x"], y=c["y"], title=title, color_discrete_sequence=["#1F4E79"])
+                fig = px.bar(chart_df, x=x_col, y=y_col, title=title, color_discrete_sequence=["#1F4E79"])
             elif chart_type == "line":
-                fig = px.line(chart_df, x=c["x"], y=c["y"], title=title, markers=True)
+                fig = px.line(chart_df, x=x_col, y=y_col, title=title, markers=True)
             elif chart_type == "scatter":
-                fig = px.scatter(chart_df, x=c["x"], y=c["y"], title=title,
+                fig = px.scatter(chart_df, x=x_col, y=y_col, title=title,
                                  trendline="ols" if len(chart_df) > 2 else None,
                                  color_discrete_sequence=["#1F4E79"])
             elif chart_type == "pie":
-                fig = px.pie(chart_df, names=c["x"], values=c["y"], title=title)
+                fig = px.pie(chart_df, names=x_col, values=y_col, title=title)
             else:
-                fig = px.bar(chart_df, x=c["x"], y=c["y"], title=title, color_discrete_sequence=["#1F4E79"])
+                fig = px.bar(chart_df, x=x_col, y=y_col, title=title, color_discrete_sequence=["#1F4E79"])
             fig.update_layout(plot_bgcolor="white")
             st.plotly_chart(fig, use_container_width=True)
         except Exception as e:
@@ -506,13 +529,13 @@ Rules:
 {history_text}
 
 Uploaded data:
-{file_text[:4000]}
+{file_text[:6000]}
 
 User request: {instruction}"""
 
         msg = client.messages.create(
             model="claude-sonnet-4-5",
-            max_tokens=2000,
+            max_tokens=4000,
             system="You are a dashboard builder. You MUST respond with only a valid JSON object. Start with {{ and end with }}. No markdown, no backticks, no explanation.",
             messages=[{"role": "user", "content": prompt}]
         )
