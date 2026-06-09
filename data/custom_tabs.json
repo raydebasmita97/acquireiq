@@ -86,5 +86,121 @@
       }
     ],
     "table": null
+  },
+  {
+    "title": "Revenue Analysis",
+    "icon": "\ud83d\udcb0",
+    "content": "",
+    "charts": [
+      {
+        "type": "bar",
+        "title": "Annual Revenue by Company",
+        "data": [
+          {
+            "Company Name": "Abalta Technologies",
+            "Annual Revenue": 12000000
+          },
+          {
+            "Company Name": "Awesomic",
+            "Annual Revenue": 1000000
+          },
+          {
+            "Company Name": "Brightside Tax Relief",
+            "Annual Revenue": 8000000
+          },
+          {
+            "Company Name": "CareGuide",
+            "Annual Revenue": 5000000
+          },
+          {
+            "Company Name": "CRITICALSTART",
+            "Annual Revenue": 50000000
+          },
+          {
+            "Company Name": "Daasity",
+            "Annual Revenue": 7000000
+          },
+          {
+            "Company Name": "Dealpath",
+            "Annual Revenue": 15000000
+          },
+          {
+            "Company Name": "Fonolo",
+            "Annual Revenue": 10000000
+          },
+          {
+            "Company Name": "GaggleAMP",
+            "Annual Revenue": 3000000
+          },
+          {
+            "Company Name": "Gold Star Partners",
+            "Annual Revenue": 20000000
+          },
+          {
+            "Company Name": "HealthAlliance",
+            "Annual Revenue": 100000000
+          },
+          {
+            "Company Name": "HomePoint Financial",
+            "Annual Revenue": 200000000
+          },
+          {
+            "Company Name": "Howspace",
+            "Annual Revenue": 4000000
+          },
+          {
+            "Company Name": "iCIMS, Inc.",
+            "Annual Revenue": 300000000
+          },
+          {
+            "Company Name": "InsightsNow",
+            "Annual Revenue": 6000000
+          },
+          {
+            "Company Name": "Kentik",
+            "Annual Revenue": 30000000
+          },
+          {
+            "Company Name": "LevelBlue",
+            "Annual Revenue": 500000000
+          },
+          {
+            "Company Name": "LogicManager",
+            "Annual Revenue": 25000000
+          },
+          {
+            "Company Name": "Mintrics",
+            "Annual Revenue": 2000000
+          },
+          {
+            "Company Name": "Molten Cloud",
+            "Annual Revenue": 9000000
+          },
+          {
+            "Company Name": "Paperform",
+            "Annual Revenue": 11000000
+          },
+          {
+            "Company Name": "PointClickCare",
+            "Annual Revenue": 400000000
+          },
+          {
+            "Company Name": "Quartzy",
+            "Annual Revenue": 8000000
+          },
+          {
+            "Company Name": "SmartBug Media",
+            "Annual Revenue": 35000000
+          },
+          {
+            "Company Name": "Tech Defenders",
+            "Annual Revenue": 18000000
+          }
+        ],
+        "x": "Company Name",
+        "y": "Annual Revenue"
+      }
+    ],
+    "table": null
   }
 ]
