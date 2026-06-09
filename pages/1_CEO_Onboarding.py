@@ -372,23 +372,40 @@ for tab_data in custom_tabs:
             st.markdown(tab_data["content"])
         charts = tab_data.get("charts") or ([tab_data["chart"]] if tab_data.get("chart") else [])
         for c in charts:
-            if not c: continue
+            if not c or not c.get("data"): continue
             try:
-                chart_df   = pd.DataFrame(c["data"])
+                chart_df = pd.DataFrame(c["data"])
+                if chart_df.empty:
+                    st.warning("Chart has no data.")
+                    continue
+
+                # Fuzzy match column names (handle spaces, case differences)
+                def match_col(name, cols):
+                    if name in cols: return name
+                    name_lower = name.lower().replace(" ","_")
+                    for col in cols:
+                        if col.lower().replace(" ","_") == name_lower:
+                            return col
+                    return cols[0] if cols else name
+
+                cols      = list(chart_df.columns)
+                x_col     = match_col(c.get("x",""), cols)
+                y_col     = match_col(c.get("y",""), cols)
                 chart_type = c.get("type", "bar")
                 title      = c.get("title", "")
+
                 if chart_type == "bar":
-                    fig = px.bar(chart_df, x=c["x"], y=c["y"], title=title, color_discrete_sequence=["#1F4E79"])
+                    fig = px.bar(chart_df, x=x_col, y=y_col, title=title, color_discrete_sequence=["#1F4E79"])
                 elif chart_type == "line":
-                    fig = px.line(chart_df, x=c["x"], y=c["y"], title=title, markers=True)
+                    fig = px.line(chart_df, x=x_col, y=y_col, title=title, markers=True)
                 elif chart_type == "scatter":
-                    fig = px.scatter(chart_df, x=c["x"], y=c["y"], title=title,
+                    fig = px.scatter(chart_df, x=x_col, y=y_col, title=title,
                                      trendline="ols" if len(chart_df) > 2 else None,
                                      color_discrete_sequence=["#1F4E79"])
                 elif chart_type == "pie":
-                    fig = px.pie(chart_df, names=c["x"], values=c["y"], title=title)
+                    fig = px.pie(chart_df, names=x_col, values=y_col, title=title)
                 else:
-                    fig = px.bar(chart_df, x=c["x"], y=c["y"], title=title, color_discrete_sequence=["#1F4E79"])
+                    fig = px.bar(chart_df, x=x_col, y=y_col, title=title, color_discrete_sequence=["#1F4E79"])
                 fig.update_layout(plot_bgcolor="white")
                 st.plotly_chart(fig, use_container_width=True)
             except Exception as e:
