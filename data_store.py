@@ -81,7 +81,10 @@ def save(key, data):
 
 
 def load_df(key):
-    return pd.DataFrame(load(key))
+    data = load(key)
+    if not data:
+        return pd.DataFrame()
+    return pd.DataFrame(data)
 
 
 def save_df(key, df):

@@ -24,14 +24,30 @@ def months_until_renewal(month_name, year):
     except Exception:
         return 999
 
-# Load fresh from data_store on every run so admin changes appear immediately
-active_sections = load_active_sections()
-customers_df = load_df("customers") if "customers"   in active_sections else None
-employees_df = load_df("employees") if "employees"   in active_sections else None
-vendors_df   = load_df("vendors")   if "vendors"     in active_sections else None
-financial_df = load_df("financials")if "financials"  in active_sections else None
-company_info = load_company()
-custom_tabs  = load_custom_tabs()   if "custom_tabs" in active_sections else []
+@st.cache_data(ttl=10)
+def get_all_data():
+    active = load_active_sections()
+    return {
+        "active":      active,
+        "customers":   load_df("customers").to_dict("records")  if "customers"   in active else None,
+        "employees":   load_df("employees").to_dict("records")  if "employees"   in active else None,
+        "vendors":     load_df("vendors").to_dict("records")    if "vendors"     in active else None,
+        "financials":  load_df("financials").to_dict("records") if "financials"  in active else None,
+        "company":     load_company(),
+        "custom_tabs": load_custom_tabs()                       if "custom_tabs" in active else [],
+    }
+
+def refresh_data():
+    get_all_data.clear()
+
+_data        = get_all_data()
+active_sections = _data["active"]
+customers_df = pd.DataFrame(_data["customers"]) if _data["customers"] is not None else None
+employees_df = pd.DataFrame(_data["employees"]) if _data["employees"] is not None else None
+vendors_df   = pd.DataFrame(_data["vendors"])   if _data["vendors"]   is not None else None
+financial_df = pd.DataFrame(_data["financials"])if _data["financials"]is not None else None
+company_info = _data["company"]
+custom_tabs  = _data["custom_tabs"]
 
 # ── Claude ───────────────────────────────────────────────────────────────────
 
@@ -99,10 +115,16 @@ with st.sidebar:
 
 # ── Main Tabs ─────────────────────────────────────────────────────────────────
 
-col_title, col_admin = st.columns([8, 1])
+col_title, col_refresh, col_admin = st.columns([7, 1, 1])
 with col_title:
     st.markdown("<h1 style='color:#1F4E79;'>CEO Onboarding Agent</h1>", unsafe_allow_html=True)
     st.markdown(f"<h3 style='color:#555; margin-top:-10px;'>{company_info.get('name','')}</h3>", unsafe_allow_html=True)
+with col_refresh:
+    st.markdown("<div style='padding-top:1.2rem;'>", unsafe_allow_html=True)
+    if st.button("🔄 Refresh", use_container_width=True):
+        refresh_data()
+        st.rerun()
+    st.markdown("</div>", unsafe_allow_html=True)
 with col_admin:
     st.markdown("<div style='text-align:right; padding-top:1.2rem;'>", unsafe_allow_html=True)
     st.markdown(
