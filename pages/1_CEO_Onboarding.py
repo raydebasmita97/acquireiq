@@ -31,8 +31,6 @@ def get_all_data():
         "custom_tabs": load_custom_tabs()                       if "custom_tabs" in active else [],
     }
 
-def refresh_data():
-    get_all_data.clear()
 
 _data        = get_all_data()
 active_sections = _data["active"]
@@ -109,16 +107,10 @@ with st.sidebar:
 
 # ── Main Tabs ─────────────────────────────────────────────────────────────────
 
-col_title, col_refresh, col_admin = st.columns([7, 1, 1])
+col_title, col_admin = st.columns([8, 1])
 with col_title:
     st.markdown("<h1 style='color:#1F4E79;'>CEO Onboarding Agent</h1>", unsafe_allow_html=True)
     st.markdown(f"<h3 style='color:#555; margin-top:-10px;'>{company_info.get('name','')}</h3>", unsafe_allow_html=True)
-with col_refresh:
-    st.markdown("<div style='padding-top:1.2rem;'>", unsafe_allow_html=True)
-    if st.button("🔄 Refresh", use_container_width=True):
-        refresh_data()
-        st.rerun()
-    st.markdown("</div>", unsafe_allow_html=True)
 with col_admin:
     st.markdown("<div style='text-align:right; padding-top:1.2rem;'>", unsafe_allow_html=True)
     st.markdown(
