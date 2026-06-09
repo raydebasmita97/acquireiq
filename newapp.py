@@ -6,14 +6,7 @@ st.set_page_config(
     layout="centered"
 )
 
-pg = st.navigation([
-    st.Page("newapp.py", title="Home", icon="🏠", default=True),
-    st.Page("pages/1_CEO_Onboarding.py", title="CEO Onboarding", icon="🏢"),
-    st.Page("pages/2_Admin.py", title="Admin", icon="⚙️"),
-], position="sidebar")
-
-# Only render landing page content when on home page
-if pg.title == "Home":
+def home():
     st.markdown("""
         <div style='text-align:center; padding: 3rem 0 1rem 0;'>
             <h1 style='color:#1F4E79; font-size:3rem; margin-bottom:0;'>AcquireIQ</h1>
@@ -52,5 +45,11 @@ if pg.title == "Home":
             AcquireIQ — Built by Debasmita Ray
         </p>
     """, unsafe_allow_html=True)
+
+pg = st.navigation([
+    st.Page(home, title="Home", icon="🏠", default=True),
+    st.Page("pages/1_CEO_Onboarding.py", title="CEO Onboarding", icon="🏢"),
+    st.Page("pages/2_Admin.py", title="Admin", icon="⚙️"),
+])
 
 pg.run()
